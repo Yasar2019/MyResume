@@ -1,147 +1,205 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yasar Nazzarian Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #000;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #000;
+        }
+
+        header .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        header .contact-info div {
+            text-align: left;
+        }
+
+        header .contact-info a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        header .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #000;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #000;
+        }
+
+        p, ul {
+            margin: 5px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .about, .skills, .education, .experience, .projects, .certifications {
+            margin-bottom: 20px;
+        }
+
+        .about p, .skills p, .education p, .experience p, .projects p, .certifications p {
+            margin: 5px 0;
+        }
+
+        .fa {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <header id="header">
-        <!-- resume header with your name and title -->
-        <h1>YASAR NAZZARIAN</h1>
-        <hr>
-        Bachelor of Engineering, B.Eng. in Software
-        <hr>
-    </header>
-    <main>
-        <article id="mainLeft">
-            <section>
-                <h2><Strong>CONTACT</Strong></h2>
-                <!-- contact info including social media -->
-                <p>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href="mailto:yasar20111926@hotmail.com">yasar20111926@hotmail.com</a>
-                </p>
-                <p>
-                    <i class="fab fa-github" aria-hidden="true"></i>
-                    <a href="https://www.github.com/Yasar2019">Yasar2019</a>
-                </p>
-                <p>
-                    <i class="fab fa-linkedin" aria-hidden="true"></i>
-                    <a href="https://www.linkedin.com/in/yasarnazzarian-98">yasarnazzarian-98</a>
-                </p>
-            </section>
-            <section>
-                <h2><Strong>SKILLS</Strong></h2>
-                <!-- your skills -->
-                <h3>Programming Languages :</h3>
-                <p>C, Java, Python, SQL, HTML, CSS, JavaScript, MATLAB</p>
-                <h3>Software applications :</h3>
-                <p>Hadoop, Apache Spark, Jupyter, Eclipse, IntelliJ, Maven, Arduino, QALab, Git, Junit, Cisco Packet Tracer, Visual Studio, Odoo, Statgraphics, Microsoft office</p>
-                <h3>Operation systems :</h3>
-                <p>Windows, Linux</p>
-            </section>
-            <section>
-                <h2><Strong>EDUCATION</Strong></h2>
-                <!-- your education -->
-                <h3>Exchange Program (Computer Science)</h3>
-                <p>
-                    National Taipei University of Technology, Taipei
-                </p>
-                <p>
-                    09/2023 -> 01/2024
-                </p>
-                
-                <h3>Bachelor's degree in software engineering</h3>
-                <p>
-                    Ecole de technologie superieure, Montreal
-                </p>
-                <p>
-                    Since 2020
-                </p>
+    <div class="container">
+        <header>
+            <h1>YASAR NAZZARIAN</h1>
+            <h2>Bachelor of Engineering, B.Eng. in Software</h2>
+            <div class="contact-info">
+                <div>
+                    <p>Email me: <a href="mailto:yasar20111926@hotmail.com">yasar20111926@hotmail.com</a></p>
+                    <p>Call me: +1 514 652 7081</p>
+                </div>
+                <div>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/yasarnazzarian-98">yasarnazzarian-98</a></p>
+                    <p>GitHub: <a href="https://www.github.com/Yasar2019">Yasar2019</a></p>
+                </div>
+            </div>
+        </header>
+        <section class="about">
+            <h2>About</h2>
+            <p>I am a recent Software Engineering graduate from École de Technologie Supérieure, with a strong passion for AI and software development. My academic background is complemented by hands-on experience gained through internships where I developed practical skills in AI integration and software engineering. My AI expertise was further developed through exchange studies in Taipei, where I took AI-focused courses and participated in an AI competition. I am eager to apply my knowledge and skills to contribute to innovative technology solutions in a professional setting.</p>
+        </section>
 
-                <h3>University path in technology</h3>
-                <p>
-                    Ecole de technologie superieure, Montreal
-                </p>
-                <p>
-                    2019-2020
-                </p>
+        <section class="skills">
+            <h2>Skills</h2>
+            <h4>Programming Languages & SE Principles</h4>
+            <p>Java, C, Python, SQL, JavaScript, OOP, Design Patterns, Agile Methodologies (Scrum, Kanban), Test-Driven Development(TDD)</p>
+            <h4>Software Applications & Tools</h4>
+            <p>Hadoop, Apache Spark, Jupyter, Microsoft Azure, Git, Docker, Terraform, Maven, Arduino, QALab, Junit, Cisco Packet Tracer, Visual Studio, Microsoft Office</p>
+            <h4>Frameworks and Libraries</h4>
+            <p>Spring Boot, React, Flask, Pytorch, Numpy, Pandas, OpenCV, Sklearn</p>
+	    <h4>Technologies</h4>
+	    <p>Microservices Architecture, Apache Kafa, Apache Spark, RabbitMQ,Hadoop, RESTful APIs, CI/CD</P>
+            <h4>Operating Systems</h4>
+            <p>Windows, Linux</p>
+        </section>
 
-                <h3>Diploma of collegial studies in natural science</h3>
-                <p>
-                    Montmorency College, Laval,CA
-                </p>
-                <p>
-                    2017-2019
-                </p>
-            </section>
-        </article>
-        <article id="mainRight">
-            <section>
-                <h2><Strong>ABOUT</Strong></h2>
-                <!-- about you -->
-                <p>As a Software Engineering student at École de technologies supérieur, I am deeply passionate about AI and the wider field of software development. My background includes comprehensive software development skills, enriched by hands-on experience in integrating advanced AI technologies during a key internship. My expertise in AI was further deepened through exchange studies in Taipei, Taiwan, where I engaged in AI-focused courses and participated in an AI competition. Eager to apply my versatile skills in software engineering and AI, I am looking for opportunities that challenge me to innovate and contribute to diverse technological solutions.</p>
-            </section>
-            <section>
-                <h2><Strong>PROFESSIONAL EXPERIENCE</Strong></h2>
-                <!-- your work experience -->
-                <h3><Strong>Software Intern</Strong></h3>
-                <p>
-                    Shared Services Canada | Winter 2024
-                </p>
-                <p>
-                    Developpinng New solution using Microsoft PowerPlaform Tools
-                </p>
-                <ul>
-                    <li>Built various applications for management using Power Apps.</li>
-                    <li>Developed new solutions using Microsoft PowerPlatform Tools.</li>
-                    <li>Created interactive visual dashboards and reports using Power BI.</li>
-                    <li>>Analyzed data and presented it through reports that can help in decision-making.</li>
-                </ul>
-                
-                <h3><Strong>IT Intern</Strong></h3>
-                <p>
-                    Ville de Laval | Winter 2023
-                </p>
-                <p>
-                    Integration of AI solutions
-                </p>
-                <ul>
-                    <li>Integrated AI solutions into the Microsoft 365 environment.</li>
-                    <li>Prototyped and implemented solutions based on customer needs.</li>
-                    <li>Offered consulting services and technical support recommendations.</li>
-                </ul>
-                
-                <h3><Strong>SOFTWARE DEVELOPER</Strong></h3>
-                <p>
-                    DELIGHT CANADA | Summer 2022
-                </p>
-                <p>
-                    Participated in the R&D of the SYMPHONI project (UV light horticulture chamber).
-                </p>
-                <ul>
-                    <li>Improved ERP system functionalities (Odoo).</li>
-                    <li>Orchestrated the migration of employee emails and data from Zoho to Microsoft using the IMAP protocol.</li>
-                    <li>Programmed an ESP32-WROOM to control Symphoni LED panels using Bluetooth Mesh.</li>
-                </ul>
-            </section>
-            <section>
-                <h2><Strong>Licences and Certifications</Strong></h2>
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor's Degree in Software Engineering</strong><br>École de Technologie Supérieure, Montreal<br>2020 - 2024</p>
+            <p><strong>Exchange Program (Computer Science)</strong><br>National Taipei University of Technology, Taipei<br>09/2023 - 01/2024</p>
+            <p><strong>University Path in Technology</strong><br>École de Technologie Supérieure, Montreal<br>2019 - 2020</p>
+            <p><strong>Diploma of Collegial Studies in Natural Science</strong><br>Montmorency College, Laval, CA<br>2017 - 2019</p>
+        </section>
 
-                <h3><a href="https://www.credly.com/badges/1755ae09-3878-4274-bb2d-88e292cd0b5b?source=linked_in_profile"> Microsoft Certified: Azure AI Fundamentals</a></h3>
-                <p>
-                    Microsoft | 2022
-                </p>
-                
-                <h3>Introduction to Decentralized Finance (DEFI)</h3>
-                <p>
-                    University of Nicosia | 2021
-                </p>
-            </section>
-        </article>
-    </main>
+        <section class="experience">
+            <h2>Professional Experience</h2>
+            <p><strong>Software Support Analyst</strong><br>Shared Services Canada | Remote | May 2024 - Present</p>
+            <ul>
+                <li>Provided on-call technical support for Microsoft Power Apps and Power BI.</li>
+                <li>Troubleshooted and resolved issues to ensure seamless user experiences.</li>
+            </ul>
+            <p><strong>Software Intern</strong><br>Shared Services Canada | Montreal, Quebec | Feb 2024 - May 2024</p>
+            <ul>
+                <li>Developed new solutions using Microsoft PowerPlatform Tools.</li>
+                <li>Analyzed business requirements to design data models converting raw data into meaningful information.</li>
+                <li>Created interactive dashboards and reports using Power BI for data-driven decision making.</li>
+                <li>Executed queries and DAX functions in Power BI.</li>
+                <li>Built various applications using Power Apps.</li>
+            </ul>
+            <p><strong>IT Intern</strong><br>Ville de Laval | Winter 2023</p>
+            <ul>
+                <li>Integrated AI solutions into existing systems.</li>
+                <li>Presented alternative AI solutions and prototyped selected options.</li>
+                <li>Integrated final AI solutions into the Microsoft 365 environment.</li>
+                <li>Documented processes and provided detailed analyses.</li>
+                <li>Offered technical support and consulting services to users.</li>
+            </ul>
+            <p><strong>Software Developer</strong><br>Delight Canada | Summer 2022</p>
+            <ul>
+                <li>Contributed to the R&D of the SYMPHONI UV light horticulture chamber project.</li>
+                <li>Enhanced functionalities of the ERP system (Odoo).</li>
+                <li>Orchestrated the migration of employee emails and data from Zoho to Microsoft using the IMAP protocol.</li>
+                <li>Conducted R&D for Delight Canada's Symphoni project (custom horticulture lighting).</li>
+                <li>Programmed an ESP32-WROOM to control 4 Symphoni LED panels using Bluetooth Mesh.</li>
+                <li>Implemented basic BLE patterns (onoff_server, Level_server).</li>
+            </ul>
+        </section>
+        <section class="projects">
+            <h2>Projects</h2>
+	    <p><strong>LOG430 Architecture logicielle: Microservices for STM & TomTom Data Integration</strong></p>
+    <ul>
+        <li>Designed and developed a microservice architecture for comparing travel times between STM bus services (STM + TomTom APIs).</li>
+        <li>Implemented telemetry mechanics to monitor real-time bus data and optimize service performance.</li>
+        <li>Integrated ChaosMonkey to test system resilience by randomly disrupting service containers, affecting memory, and limiting processing power.</li>
+        <li>Employed availability and performance tactics to handle disruptions in message queues and external service connectors.</li>
+        <li>Conducted architecture analysis and documentation.</li>
+    </ul>
+
+            <p><strong>TBrain Competition: Go Power Imitation and Play Style Identification</strong><br>National Taipei University of Technology | Nov 2023</p>
+            <p>Built machine learning networks to imitate Go game and identify play styles using CNN, RNN, LSTM, and Reinforcement Learning.</p>
+            <p><strong>Remote-Controlled Miniature Crane</strong><br>École de Technologie Supérieure | Jan 2020 - Apr 2020</p>
+            <ul>
+                <li>Modeled parts using G-Code, MasterCam, and conventional machining.</li>
+                <li>Designed and created necessary electrical circuits (PCBs) using Altium.</li>
+                <li>Programmed the microcontroller for bidirectional communication.</li>
+                <li>Assembled the entire project.</li>
+            </ul>
+                    </section>
+        <section class="certifications">
+            <h2>Licenses and Certifications</h2>
+            <p><strong><a href="https://www.credly.com/badges/1755ae09-3878-4274-bb2d-88e292cd0b5b?source=linked_in_profile">Microsoft Certified: Azure AI Fundamentals</a></strong></p>
+                    </section>
+    </div>
 </body>
 
 </html>
