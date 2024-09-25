@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yasar Nazzarian Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -35,168 +34,55 @@
             color: #000;
         }
 
-        header h2 {
-            margin: 0;
-            font-size: 1.5em;
-            color: #000;
-        }
-
-        header .contact-info {
+        .language-switch {
             display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-            font-size: 0.9em;
-        }
-
-        header .contact-info div {
-            text-align: left;
-        }
-
-        header .contact-info a {
-            color: blue;
-            text-decoration: none;
-        }
-
-        header .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        section {
+            justify-content: center;
             margin-bottom: 20px;
         }
 
-        h2 {
-            color: #000;
-            border-bottom: 2px solid #000;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
+        .language-switch button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 10px;
         }
 
-        h3 {
-            color: #000;
+        .language-switch button:hover {
+            background-color: #0056b3;
         }
 
-        p, ul {
-            margin: 5px 0;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        .about, .skills, .education, .experience, .projects, .certifications {
-            margin-bottom: 20px;
-        }
-
-        .about p, .skills p, .education p, .experience p, .projects p, .certifications p {
-            margin: 5px 0;
-        }
-
-        .fa {
-            margin-right: 10px;
+        embed {
+            width: 100%;
+            height: 600px;
         }
     </style>
+    <script>
+        function switchLanguage(lang) {
+            const pdfFrame = document.getElementById('pdfFrame');
+            if (lang === 'en') {
+                pdfFrame.src = 'Yasar Nazzarian-Resume.pdf';
+            } else {
+                pdfFrame.src = 'Yasar Nazzarian-Resume-Fr.pdf';
+            }
+        }
+    </script>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>YASAR NAZZARIAN</h1>
-            <h2>Bachelor of Engineering, B.Eng. in Software</h2>
-            <div class="contact-info">
-                <div>
-                    <p>Email me: <a href="mailto:yasar20111926@hotmail.com">yasar20111926@hotmail.com</a></p>
-                    <p>Call me: +1 514 652 7081</p>
-                </div>
-                <div>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/yasarnazzarian-98">yasarnazzarian-98</a></p>
-                    <p>GitHub: <a href="https://www.github.com/Yasar2019">Yasar2019</a></p>
-                </div>
-            </div>
+            <h1>Yasar Nazzarian Resume</h1>
         </header>
-        <section class="about">
-            <h2>About</h2>
-            <p>I am a recent Software Engineering graduate from École de Technologie Supérieure, with a strong passion for AI and software development. My academic background is complemented by hands-on experience gained through internships where I developed practical skills in AI integration and software engineering. My AI expertise was further developed through exchange studies in Taipei, where I took AI-focused courses and participated in an AI competition. I am eager to apply my knowledge and skills to contribute to innovative technology solutions in a professional setting.</p>
-        </section>
 
-        <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li><strong>Programming Languages & SE Principles:</strong> Java, C, Python, SQL, JavaScript, OOP, Design Patterns, Agile (Scrum, Kanban), TDD</li>
-        <li><strong>Software Applications & Tools:</strong> Hadoop, Apache Spark, Jupyter, Microsoft Azure, Git, Docker, Terraform, Maven, Arduino, QALab, Junit, Cisco Packet Tracer, Visual Studio, Microsoft Office</li>
-        <li><strong>Frameworks & Libraries:</strong> Spring Boot, React, Flask, Pytorch, Numpy, Pandas, OpenCV, Sklearn</li>
-        <li><strong>Technologies:</strong> Microservices Architecture, Apache Kafa, Apache Spark, RabbitMQ, Hadoop, RESTful APIs, CI/CD</li>
-        <li><strong>Operating Systems:</strong> Windows, Linux</li>
-    </ul>
-</section>
+        <div class="language-switch">
+            <button onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('fr')">Français</button>
+        </div>
 
-
-        <section class="education">
-            <h2>Education</h2>
-            <p><strong>Bachelor's Degree in Software Engineering</strong><br>École de Technologie Supérieure, Montreal<br>2020 - 2024</p>
-            <p><strong>Exchange Program (Computer Science)</strong><br>National Taipei University of Technology, Taipei<br>09/2023 - 01/2024</p>
-            <p><strong>University Path in Technology</strong><br>École de Technologie Supérieure, Montreal<br>2019 - 2020</p>
-            <p><strong>Diploma of Collegial Studies in Natural Science</strong><br>Montmorency College, Laval, CA<br>2017 - 2019</p>
-        </section>
-
-        <section class="experience">
-            <h2>Professional Experience</h2>
-            <p><strong>Software Support Analyst</strong><br>Shared Services Canada | Remote | May 2024 - Present</p>
-            <ul>
-                <li>Provided on-call technical support for Microsoft Power Apps and Power BI.</li>
-                <li>Troubleshooted and resolved issues to ensure seamless user experiences.</li>
-            </ul>
-            <p><strong>Software Intern</strong><br>Shared Services Canada | Montreal, Quebec | Feb 2024 - May 2024</p>
-            <ul>
-                <li>Developed new solutions using Microsoft PowerPlatform Tools.</li>
-                <li>Analyzed business requirements to design data models converting raw data into meaningful information.</li>
-                <li>Created interactive dashboards and reports using Power BI for data-driven decision making.</li>
-                <li>Executed queries and DAX functions in Power BI.</li>
-                <li>Built various applications using Power Apps.</li>
-            </ul>
-            <p><strong>IT Intern</strong><br>Ville de Laval | Winter 2023</p>
-            <ul>
-                <li>Integrated AI solutions into existing systems.</li>
-                <li>Presented alternative AI solutions and prototyped selected options.</li>
-                <li>Integrated final AI solutions into the Microsoft 365 environment.</li>
-                <li>Documented processes and provided detailed analyses.</li>
-                <li>Offered technical support and consulting services to users.</li>
-            </ul>
-            <p><strong>Software Developer</strong><br>Delight Canada | Summer 2022</p>
-            <ul>
-                <li>Contributed to the R&D of the SYMPHONI UV light horticulture chamber project.</li>
-                <li>Enhanced functionalities of the ERP system (Odoo).</li>
-                <li>Orchestrated the migration of employee emails and data from Zoho to Microsoft using the IMAP protocol.</li>
-                <li>Conducted R&D for Delight Canada's Symphoni project (custom horticulture lighting).</li>
-                <li>Programmed an ESP32-WROOM to control 4 Symphoni LED panels using Bluetooth Mesh.</li>
-                <li>Implemented basic BLE patterns (onoff_server, Level_server).</li>
-            </ul>
-        </section>
-        <section class="projects">
-            <h2>Projects</h2>
-	    <p><strong>Microservices for STM & TomTom Data Integration</strong></p>
-    <ul>
-        <li>Designed and developed a microservice architecture for comparing travel times between STM bus services (STM + TomTom APIs).</li>
-        <li>Implemented telemetry mechanics to monitor real-time bus data and optimize service performance.</li>
-        <li>Integrated ChaosMonkey to test system resilience by randomly disrupting service containers, affecting memory, and limiting processing power.</li>
-        <li>Employed availability and performance tactics to handle disruptions in message queues and external service connectors.</li>
-        <li>Conducted architecture analysis and documentation.</li>
-    </ul>
-
-            <p><strong>TBrain Competition: Go Power Imitation and Play Style Identification</strong><br>National Taipei University of Technology | Nov 2023</p>
-            <p>Built machine learning networks to imitate Go game and identify play styles using CNN, RNN, LSTM, and Reinforcement Learning.</p>
-            <p><strong>Remote-Controlled Miniature Crane</strong><br>École de Technologie Supérieure | Jan 2020 - Apr 2020</p>
-            <ul>
-                <li>Modeled parts using G-Code, MasterCam, and conventional machining.</li>
-                <li>Designed and created necessary electrical circuits (PCBs) using Altium.</li>
-                <li>Programmed the microcontroller for bidirectional communication.</li>
-                <li>Assembled the entire project.</li>
-            </ul>
-                    </section>
-        <section class="certifications">
-            <h2>Licenses and Certifications</h2>
-            <p><strong><a href="https://www.credly.com/badges/1755ae09-3878-4274-bb2d-88e292cd0b5b?source=linked_in_profile">Microsoft Certified: Azure AI Fundamentals</a></strong></p>
-                    </section>
+        <embed id="pdfFrame" src="Yasar Nazzarian-Resume.pdf" type="application/pdf" />
     </div>
 </body>
 
